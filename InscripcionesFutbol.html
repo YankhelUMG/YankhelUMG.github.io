@@ -1,9 +1,15 @@
 <html lang="es">
     <head>
         <title>Inscripcion a equipo | 8vo ciclo sistemas</title>
+    <style>
+        main{
+            background:lightblue;
+        }
+        
+    </style>
     </head>
     <body>
-    <main>
+    <main id="main" class="formulario inscripcion active">
     <h1>Inscripcion a equipo 02-2026</h1>
         <form autocomplete="off" action="">
             <label for="studentID">Carné de Estudiante</label>
@@ -13,7 +19,14 @@
             <input type="text" id="studentName" required/>
 
             <label for="studentYear">Año de nacimiento</label>
-            <input type="date" id="studentYear" required/>
+            <input type="date" id="studentYear" required max="2010-07-23"/>
+
+            <label for="selectedTeamId">Seleccione su equipo</label>
+            <select id="selectedTeamId" >
+                <option value="1">FC Barcelona</option>
+                <option value="2">Real Madrid</option>
+            </select>
+
             
         </form>
     </main>
